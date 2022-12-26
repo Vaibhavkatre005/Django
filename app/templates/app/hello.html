@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        {% if isAuth %}
+            <h1>Hello {{name}}</h1>
+        {%endif%}
+        <h3>{{list_item.0}}</h3>
+        <h3>{{list_item.1}}</h3>
+        <h4>{{temp_value.value}}</h4>
+        {{{% comment "This is comment for Django" %}
+        {% endcomment %}}}
+        <h4>{{list_item|length}}</h4>
+
+
+
+</body>
+</html>
